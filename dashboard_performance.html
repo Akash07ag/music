@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container_dash">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="title d-flex align-items-center"><h5>Music Marketplace</h5 ></span>
+                    </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                      <span class="icon">
+                       <img src="images/dashboard.png">
+                      </span>
+                      <span class="title">Dashboard</span>
+                  </a>
+              </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                         <img src="images/performance.png">
+                        </span>
+                        <span class="title">Performance</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/teaching.png">
+                        </span>
+                        <span class="title">Teaching</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/administration.png">
+                        </span>
+                        <span class="title">Administration</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/course.png">
+                        </span>
+                        <span class="title">Course</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/competition.png">
+                        </span>
+                        <span class="title">Competition</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+           
+                  <div class="dropdown setting_list_box">
+                    <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown">
+                      <span class="setting"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    </button>
+                    <ul class="dropdown-menu setting_list">
+                      <li><a class="dropdown-item" href="#"><span><i class="fa fa-user" aria-hidden="true"></i></span>Profile</a></li>
+                      <li><a class="dropdown-item" href="#"><span><i class="fa fa-sign-out" aria-hidden="true"></i></span>Logout</a></li>
+                    </ul>
+                  </div>
+                
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+              <h2>Performance Job Post</h2>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+
+              <div class="main_dashboard">
+   
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form id="msform">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"></li>
+                            <li id="personal"></li>
+                            <li id="payment"></li>
+                            <li id="confirm"></li>
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> <br> <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Account Information:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 1 - 4</h2>
+                                    </div>
+                                </div> 
+                                <label class="fieldlabels">Organization Title</label> 
+                                <input type="text" name="email" placeholder="Email Id" />
+                                 <label class="fieldlabels">Job Title</label> 
+                                 <input type="text" name="uname" placeholder="UserName" /> 
+                                 <label class="form-label">Country</label>
+                                 <select class="form-select">
+                                   <option>Country</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                                   <option>4</option>
+                                 </select>
+                                 <label class="form-label">Town/City</label>
+                                 <select class="form-select">
+                                   <option>Town/City</option>
+                                   <option>2</option>
+                                   <option>3</option>
+                                   <option>4</option>
+                                 </select>
+                                 <label class="form-label">Job Description</label>
+                                 <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                 <label class="form-label">Logo</label>
+                                 <div class="avatar-upload">
+                                   <div class="avatar-preview">
+                                       <div id="imagePreview" style="background-image: url();">
+                                       </div>
+                                   </div>
+                                   <div class="avatar-edit">
+                                       <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                       <label for="imageUpload" class="py-2 px-3 draw-border border-success">Change Logo</label>
+                                   </div>
+                               </div>
+                                
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Job Type</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 4</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                  <h4>Instrument</h4>
+                                  <div class="col-md-3 mb-3">
+                                    <h6>Woodwind</h6>
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <h6>Brass</h6>
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check4" name="option4" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check5" name="option5" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check6" name="option6" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <h6>Strings</h6>
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check7" name="option7" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check8" name="option8" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check9" name="option9" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <h6>Keyboard</h6>
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check10" name="option10" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check11" name="option11" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 mb-3">
+                                    <h6>Timpani/Percussion</h6>
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check13" name="option13" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <h4>Voice</h4>
+                                  <div class="col-md-3 mb-3">
+                                    <div class="type_list">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check14" name="option14" value="something" checked>
+                                        <label class="form-check-label">Flute </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check15" name="option15" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="check16" name="option16" value="something" checked>
+                                        <label class="form-check-label">Baroque Flute</label>
+                                      </div>
+                                  
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <div class="row">
+                                    <h4>Music Direction</h4>
+                                    <div class="col-md-3 mb-3">
+                                      <div class="type_list">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="check17" name="option17" value="something" checked>
+                                          <label class="form-check-label">Flute </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="check18" name="option18" value="something" checked>
+                                          <label class="form-check-label">Baroque Flute</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="check19" name="option19" value="something" checked>
+                                          <label class="form-check-label">Baroque Flute</label>
+                                        </div>
+                                    
+                                      </div>
+                                    </div>
+                                  </div>
+                                    <div class="row">
+                                      <h4>Composition</h4>
+                                      <div class="col-md-3 mb-3">
+                                        <div class="type_list">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check19" name="option19" value="something" checked>
+                                            <label class="form-check-label">Composer </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="check20" name="option20" value="something" checked>
+                                            <label class="form-check-label">Arranger</label>
+                                          </div>
+                                      
+                                        </div>
+                                      </div>
+                                    </div>
+                                      <div class="row choose_set pb-4">
+                                        <h6>Closing Date</h6>
+                                        <div class="col-md-12 mb-3">
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>One Week
+                                            <label class="form-check-label" for="radio1"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Two Weeks
+                                            <label class="form-check-label" for="radio2"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">One Month
+                                            <label class="form-check-label" for="radio3"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Six Weeks
+                                            <label class="form-check-label" for="radio4"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">Two Months
+                                            <label class="form-check-label" for="radio5"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio6" name="optradio" value="option6">Three Months
+                                            <label class="form-check-label" for="radio6"></label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio7" name="optradio" value="option7">Specify Date
+                                            <label class="form-check-label" for="radio7"></label>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" >
+                                        </div>
+                                      </div>
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Contract Type</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 3 - 4</h2>
+                                    </div>
+                                </div> 
+                                <div class="row pb-4">
+                                  <h4>Employment/Contract Details</h4>
+                                  <div class="col-md-6 mb-3">
+                                    <label class="form-label">Contract Type: (Optional)</label>
+                                    <select class="form-select">
+                                      <option>Please select</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                   
+                                  </div>
+                                </div>
+                                <div class="row pb-4">
+                                  <h4>Salary Details (Optional)</h4>
+                                  <div class="col-md-12 mb-3 d-flex">
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="radio8" name="optradio" value="option1" checked>Specify salary
+                                      <label class="form-check-label" for="radio8"></label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="radio9" name="optradio" value="option2">Specify Salary Range
+                                      <label class="form-check-label" for="radio9"></label>
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Time Period<span class="red">*</span></label>
+                                        <select class="form-select">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Currency<span class="red">*</span></label>
+                                        <select class="form-select">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Salary Amount<span class="red">*</span></label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Time Period<span class="red">*</span></label>
+                                        <select class="form-select">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Currency<span class="red">*</span></label>
+                                        <select class="form-select">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Salary Minimum<span class="red">*</span></label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Salary Maximum<span class="red">*</span></label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                    </div>
+                                    <div class="row pb-4">
+                                      <h4>Web Links: (Optional)</h4>
+                                      <div class="col-md-12">
+                                      <div class="row cross_box">
+                                        <a href="#"  class="cross_icon"><span><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Link URL:</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                   
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Description:</label>
+                                        <textarea class="form-control" rows="1" id="comment" name="text"></textarea>
+                                      </div>
+                                      </div>
+                                    </div>
+                                      <div class="row">
+                                        <div class="col-md-6 mb-3 d-flex">
+                                          <a href="#" class="py-2 px-3 draw-border border-success text-decoration-none">Add Another Link</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <h4>Further Documents (Optional)</h4>
+                                      <div class="col-md-12">
+                                      <div class="row cross_box">
+                                        <a href="#"  class="cross_icon"><span><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                                        <div class="col-md-6 mb-3">
+                                          <label for="formFile" class="form-label">Upload Files</label>
+                                          <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                      <div class="col-md-6 mb-3">
+                                        <label class="form-label">Document Title</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                      </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-md-6 mb-3 d-flex">
+                                          <a href="#" class="py-2 px-3 draw-border border-success text-decoration-none">Add Another Link</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div> 
+                            <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Finish:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 4 - 4</h2>
+                                    </div>
+                                </div> <br><br>
+                                <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                <div class="row justify-content-center">
+                                    <!-- <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div> -->
+                                </div> <br><br>
+                                <div class="row justify-content-center">
+                                    <div class="col-7 text-center">
+                                        <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                      </div>
+                    </div>
+                    </div>
+         
+              </div>
+         
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

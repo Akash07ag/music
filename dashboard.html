@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container_dash">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="title d-flex align-items-center"><h5>Music Marketplace</h5 ></span>
+                    </a>
+                </li>
+                <li>
+                  <a href="dashboard_performance.html">
+                      <span class="icon">
+                       <img src="images/dashboard.png">
+                      </span>
+                      <span class="title">Dashbaord</span>
+                  </a>
+              </li>
+
+                <li>
+                    <a href="dashboard_performance.html">
+                        <span class="icon">
+                         <img src="images/performance.png">
+                        </span>
+                        <span class="title">Performance</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/teaching.png">
+                        </span>
+                        <span class="title">Teaching</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/administration.png">
+                        </span>
+                        <span class="title">Administration</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/course.png">
+                        </span>
+                        <span class="title">Course</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <img src="images/competition.png">
+                        </span>
+                        <span class="title">Competition</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+           
+                  <div class="dropdown setting_list_box">
+                    <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown">
+                      <span class="setting"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    </button>
+                    <ul class="dropdown-menu setting_list">
+                      <li><a class="dropdown-item" href="#"><span><i class="fa fa-user" aria-hidden="true"></i></span>Profile</a></li>
+                      <li><a class="dropdown-item" href="#"><span><i class="fa fa-sign-out" aria-hidden="true"></i></span>Logout</a></li>
+                    </ul>
+                  </div>
+                
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+              <h2>Partner Dashboard</h2>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+
+              <div class="main_dashboard">
+                <nav class="tab_btn">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Active Posts</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Archived Posts</button>
+                  </div>
+                </nav>
+                <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+                  <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <h2>Active Posts</h2>
+                    <div class="tiles_list">
+                      <div class="top_inner_box">
+                        <div>
+                          <span>Posted: 02 Aug 2023</span>
+                        </div>
+                        <div>
+                            Sioux City, IA, United States<span><img src=""></span>
+                        </div>
+                      </div>
+                      <div class="bottom_inner_box">
+                        <div class="dash_img">
+                          <img src="images/administrator.jpeg" alt="tiles">
+                        </div>
+                        <div class="dash_content">
+                          <h4>Sioux City Symphony Orchestra</h4>
+                          <h5>Principal Second Violin</h5>
+                          <p>(per service)</p>
+                          <p>Closing Date: <span>01 Sep 2023</span></p>
+                        </div>
+                      </div>
+                      <a href="#" class="right_play"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                    </div>
+                    <div class="tiles_list">
+                      <div class="top_inner_box">
+                        <div>
+                          <span>Posted: 02 Aug 2023</span>
+                        </div>
+                        <div>
+                            Sioux City, IA, United States<span><img src=""></span>
+                        </div>
+                      </div>
+                      <div class="bottom_inner_box">
+                        <div class="dash_img">
+                          <img src="images/administrator.jpeg" alt="tiles">
+                        </div>
+                        <div class="dash_content">
+                          <h4>Sioux City Symphony Orchestra</h4>
+                          <h5>Principal Second Violin</h5>
+                          <p>(per service)</p>
+                          <p>Closing Date: <span>01 Sep 2023</span></p>
+                        </div>
+                      </div>
+                      <a href="#" class="right_play"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h2>Archived Posts</h2>
+                    <div class="tiles_list">
+                      <div class="top_inner_box">
+                        <div>
+                          <span>Posted: 02 Aug 2023</span>
+                        </div>
+                        <div>
+                            Sioux City, IA, United States<span><img src=""></span>
+                        </div>
+                      </div>
+                      <div class="bottom_inner_box">
+                        <div class="dash_img">
+                          <img src="images/administrator.jpeg" alt="tiles">
+                        </div>
+                        <div class="dash_content">
+                          <h4>Sioux City Symphony Orchestra</h4>
+                          <h5>Principal Second Violin</h5>
+                          <p>(per service)</p>
+                          <p>Closing Date: <span>01 Sep 2023</span></p>
+                        </div>
+                      </div>
+                      <a href="#" class="right_play"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                    </div>
+                    <div class="tiles_list">
+                      <div class="top_inner_box">
+                        <div>
+                          <span>Posted: 02 Aug 2023</span>
+                        </div>
+                        <div>
+                            Sioux City, IA, United States<span><img src=""></span>
+                        </div>
+                      </div>
+                      <div class="bottom_inner_box">
+                        <div class="dash_img">
+                          <img src="images/administrator.jpeg" alt="tiles">
+                        </div>
+                        <div class="dash_content">
+                          <h4>Sioux City Symphony Orchestra</h4>
+                          <h5>Principal Second Violin</h5>
+                          <p>(per service)</p>
+                          <p>Closing Date: <span>01 Sep 2023</span></p>
+                        </div>
+                      </div>
+                      <a href="#" class="right_play"><span><i class="fa fa-play" aria-hidden="true"></i></span></a>
+                    </div>
+                  </div>
+                </div>
+         
+           
+                </div>
+         
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
